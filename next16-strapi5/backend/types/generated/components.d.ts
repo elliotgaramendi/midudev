@@ -25,6 +25,7 @@ export interface ModulesHero extends Struct.ComponentSchema {
     heading: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
+    link: Schema.Attribute.Component<'elements.link', false>;
     subheading: Schema.Attribute.Text;
   };
 }
