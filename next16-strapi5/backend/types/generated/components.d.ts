@@ -19,7 +19,7 @@ export interface ModulesHero extends Struct.ComponentSchema {
   collectionName: 'components_modules_heroes';
   info: {
     displayName: 'Hero';
-    icon: 'grid';
+    icon: 'picture';
   };
   attributes: {
     heading: Schema.Attribute.String;
