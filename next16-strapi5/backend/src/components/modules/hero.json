@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_modules_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
