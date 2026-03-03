@@ -16,6 +16,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "modules.hero"
+      ]
     }
   }
 }
