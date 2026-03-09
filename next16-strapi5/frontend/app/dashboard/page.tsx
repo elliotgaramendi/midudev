@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import { actions } from "@/actions";
+
 export default function DashboardRoute() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -225,6 +227,15 @@ export default function DashboardRoute() {
                 </div>
                 <div className="size-10 rounded-2xl bg-linear-to-br from-blue-400 via-blue-600 to-indigo-700" />
               </div>
+
+              <form action={actions.auth.logoutUserAction}>
+                <button
+                  className="inline-flex h-11 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 px-4 text-sm font-medium text-zinc-200 transition hover:bg-zinc-800 hover:text-white"
+                  type="submit"
+                >
+                  Sign out
+                </button>
+              </form>
             </div>
           </header>
 
